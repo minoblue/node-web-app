@@ -37,6 +37,12 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/portfolio',(req,res)=>{
+    res.render('portfolio.hbs',{
+        'title':'Portfolio Page'
+    });
+});
+
 app.listen(port,()=>{
     console.log(`server lisrning on port ${port}`);
 });
